@@ -1,0 +1,17 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+config/webconfig.local.php
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PHP/dependency noise
+vendor/
+
+# Generated archives
+*.zip

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: #FEF4EC;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer {
+  background-color: #0D2A52;
+  color: #FEF4EC;
+  padding: 0em;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0em;
+  margin-bottom: 0em;
+}
+
+.logo img {
+  height: 190px;
+  width: 190px;
+}
+
+.title {
+  margin-top: -1em;
+  font-size: 3em;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  color: #0D47A1;
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+.form-container {
+  color: #0D2A52;
+  font-family: 'Libre Baskerville', serif;
+  width: 100%;
+  max-width: 435px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  margin-top: -7em;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #0D2A52;
+  color: #FFC137;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Overlay', serif;
+  margin-bottom: 1em;
+}
+
+.submit-button:hover {
+  background-color: #FFC137;
+  color: #0D2A52;
+}
+
+.logout-button {
+  background-color: #FFC137;
+  color: #0D2A52;
+  font-weight: bold;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Overlay', serif;
+  font-size: 1em;
+  cursor: pointer;
+  max-width: 335px;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.logout-button:hover {
+  background-color: #0D2A52;
+  color: #FFC137;
+}
+
+.footer-text {
+  color: #FEF4EC;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+
+  .title {
+    font-size: 2em;
+    margin-top: 0.5em;
+  }
+
+  .form-container {
+    margin-top: 0;
+    padding: 1em;
+    max-width: 90%;
+  }
+
+  .submit-button, .logout-button {
+    font-size: 0.9em;
+    padding: 0.8em;
+    width: 100%;
+  }
+
+  header div h1, header div p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .footer-text {
+    font-size: 1em;
+  }
+}

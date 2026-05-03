@@ -1,0 +1,281 @@
+body {
+      margin: 0;
+      font-family: 'Cormorant Garamond', serif;
+      background-size: cover;
+    }
+
+.overlay {
+  background-color: #FEF4EC;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+header, footer {
+  background-color: #0D2A52;
+  color: #FEF4EC;
+  padding: 0em;
+  text-align: center;
+  }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0em; 
+  margin-bottom: 0em;
+  }
+
+.logo img {
+  height: 190px;
+  width: 190px;
+  }
+.dashboard-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 1em;
+  font-size: 1.7em;
+  font-family: 'Cormorant Garamond', serif;
+  }
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  }
+
+.tab-buttons button {
+  padding: 0.6em 1em;
+  margin: 0 0.2em;
+  border: 2px solid #0D47A1;
+  background-color: white;
+  color: #0D2A52;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.7em;
+  cursor: pointer;
+  font-weight: 550;
+  border-radius: 6px;
+  }
+
+.tab-buttons button.active {
+  background-color: #FFC137;
+  color: #0D2A52;
+  }
+
+.job-card {
+  background-color: white;
+  border: 2px solid #0D47A1;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 2px;
+  }
+
+.job-card h3 {
+  color: #0D2A52;
+  }
+
+.job-card p strong {
+  color: #0D47A1;
+  }
+
+.job-card button {
+  background-color: #FFC137;
+  color: #0D2A52;
+  border: 1.7px solid #0D2A52;
+  padding: 0.7em 1.3em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5em;
+  font-family: 'Overlay', serif;
+  }
+
+.job-card button:hover {
+  background-color: #0D2A52;
+  color: #FFC137;
+  }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(13, 18, 33, 0.6);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.modal-content {
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  padding: 2em 2.5em;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0D1B2A;
+}
+
+.modal-content p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  color: #0D2A52;
+}
+
+.modal-buttons {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.modal-buttons button {
+  background-color: #0D47A1;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-family: 'Overpass', sans-serif;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#confirmYes {
+  background-color: #FFC137;
+  color: #0D2A52;
+}
+
+#confirmYes:hover {
+  background-color: #0D2A52;
+  color: #FFC137;
+}
+
+#confirmNo {
+  background-color: #0D2A52;
+  color: #FFC137;
+}
+
+#confirmNo:hover {
+  background-color: #FFC137;
+  color: #0D2A52;
+}
+
+.job-list {
+  max-height: 60vh; 
+  overflow-y: auto; 
+  padding-right: 0.5em; 
+}
+
+.logout-button {
+  background-color: #FFC137;
+  color: #0D2A52;
+  font-weight: bold;
+  padding: 0.8em 1em;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Overlay', serif;
+  font-size: 0.7em;
+  cursor: pointer;
+  max-width: 335px;
+  transition: background-color 0.3s ease;
+
+  align-self: center;
+  display: block;
+  margin: 1em auto 0 auto;
+}
+
+.logout-button:hover {
+  background-color: #0D2A52;
+  color: #FFC137;
+}
+
+    .footer-text {
+  color: #FEF4EC;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+
+  .dashboard-container {
+    max-width: 90%;
+    font-size: 1.1em;
+    padding: 0.5em;
+  }
+
+  .tab-buttons button {
+    padding: 0.4em 0.8em;
+    font-size: 0.8em;
+  }
+
+  .job-card {
+    padding: 0.8em;
+    font-size: 0.95em;
+  }
+
+  .job-card button {
+    font-size: 0.9em;
+    padding: 0.4em 0.8em;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 1.5em;
+  }
+
+  .modal-content p {
+    font-size: 1em;
+  }
+
+  .modal-buttons button {
+    font-size: 0.9em;
+    padding: 0.4em 1.2em;
+  }
+
+  .logout-button {
+    font-size: 0.9em;
+    padding: 0.8em 1em;
+    max-width: 90%;
+  }
+
+  .footer-text {
+    font-size: 1em;
+  }
+
+  header div h1, header div p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    font-size: 1em;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-buttons button {
+    margin-bottom: 0.5em;
+  }
+
+  .job-card h3 {
+    font-size: 1em;
+  }
+
+  .footer-text {
+    font-size: 0.9em;
+  }
+}
