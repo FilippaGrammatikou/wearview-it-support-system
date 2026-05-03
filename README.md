@@ -1,3 +1,11 @@
+<p align="center">
+  <img alt="PHP" src="https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img alt="MariaDB" src="https://img.shields.io/badge/MariaDB-10.11-003545?style=for-the-badge&logo=mariadb&logoColor=white" />
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-Client%20Validation-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img alt="CSS" src="https://img.shields.io/badge/CSS-Responsive%20UI-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+</p>
+
 # WearView IT Support System
 
 This is an earlier full-stack coursework app with PHP, MariaDB, Docker, forms, validation, and a complete user workflow for a 2024 university coursework archive, later cleaned and Dockerized for local execution.
