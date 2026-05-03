@@ -28,8 +28,8 @@ CREATE TABLE users (
 INSERT INTO issues
   (reporter_name, reporter_email, fault_title, location, description, status, created_at, updated_at)
 VALUES
-  ('Demo Staff User', 'staff.user@example.com', 'Projector not displaying', 'Room A12', 'The classroom projector powers on but does not display the connected laptop screen.', 'incomplete', '2025-06-28 16:23:51', NULL),
-  ('Demo Lecturer User', 'lecturer.user@example.com', 'Network connection unavailable', 'Computer Lab 2', 'Several desktop machines cannot connect to the wired network during scheduled lab sessions.', 'complete', '2025-06-30 14:48:58', '2025-06-30 14:49:49');
+  ('Demo Staff User', 'staff.user@example.com', 'Projector not displaying', 'Room A12', 'The classroom projector powers on but does not display the connected laptop screen.', 'incomplete', '2024-06-28 16:23:51', NULL),
+  ('Demo Lecturer User', 'lecturer.user@example.com', 'Network connection unavailable', 'Computer Lab 2', 'Several desktop machines cannot connect to the wired network during scheduled lab sessions.', 'complete', '2024-06-30 14:48:58', '2024-06-30 14:49:49');
 
 -- Local demo credentials only. Do not reuse these in a real deployment.
 INSERT INTO users (username, password, role)
